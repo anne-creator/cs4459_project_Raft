@@ -1,0 +1,5 @@
+1:book
+2:laptop
+3:coffee mug
+4:headphones
+5:backpack
