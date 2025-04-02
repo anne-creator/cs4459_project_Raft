@@ -10,10 +10,11 @@ import replication_pb2_grpc
 import heartbeat_service_pb2
 import heartbeat_service_pb2_grpc
 
+# Class for single node in dis system
 class SequenceServicer(replication_pb2_grpc.SequenceServicer):
     def __init__(self, node_id, config_path="config.json"):
         self.id = node_id
-        self.state = "leader" if node_id == "node1" else "follower"
+        self.state = "follower"
         self.current_term = 0
         self.voted_for = None
         self.data = {}
@@ -31,17 +32,19 @@ class SequenceServicer(replication_pb2_grpc.SequenceServicer):
 
         self.host = config[self.id]["host"]
         self.port = config[self.id]["port"]
+
+        # Get other peers
         self.peers = {}
         for peer_id, info in config.items():
             if peer_id != self.id:
                 self.peers[peer_id] = info
 
-        # Hardcoded connection to only one peer for now to simulate primary and backup from assignment 2
-        self.backup_stub = None
-        if self.peers:
-            first_peer_info = next(iter(self.peers.values()))
-            address = f"{first_peer_info['host']}:{first_peer_info['port']}"
-            self.backup_stub = replication_pb2_grpc.SequenceStub(grpc.insecure_channel(address))
+        self.peer_stubs = {}
+        for peer_id, info in self.peers.items():
+            address = f"{info['host']}:{info['port']}"
+            self.peer_stubs[peer_id] = replication_pb2_grpc.SequenceStub(
+                grpc.insecure_channel(address)
+            )
 
         print(f"[{self.id}] {self.state} started on {self.host}:{self.port} | Peers: {list(self.peers)}")
 
@@ -50,12 +53,13 @@ class SequenceServicer(replication_pb2_grpc.SequenceServicer):
         value = request.value
         print(f"[{self.id}] Received write request: {key}:{value}")
 
-        if self.state == "leader" and self.backup_stub:
-            try:
-                backup_response = self.backup_stub.Write(replication_pb2.WriteRequest(key=key, value=value))
-                print(f"[{self.id}] Backup acknowledgment: {backup_response.ack}")
-            except grpc.RpcError:
-                return replication_pb2.WriteResponse(ack="Backup unavailable")
+        # Leader forwards write to peers
+        if self.state == "leader":
+            for peer_id, stub in self.peer_stubs.items():
+                try:
+                    stub.Write(replication_pb2.WriteRequest(key=key, value=value))
+                except grpc.RpcError as e:
+                    print(f"[{self.id}] Failed to send to {peer_id}: {e}")
 
         self.data[key] = value
         with open(self.log_file, "a") as log_file:
