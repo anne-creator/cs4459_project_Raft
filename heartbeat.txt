@@ -2314,3 +2314,10 @@ Node1 is alive. Latest heartbeat received at 2025-04-02 04:06:51
 Node2 is alive. Latest heartbeat received at 2025-04-02 04:06:53
 Node1 is alive. Latest heartbeat received at 2025-04-02 04:06:56
 Node2 is alive. Latest heartbeat received at 2025-04-02 04:06:58
+Node1 is alive. Latest heartbeat received at 2025-04-02 04:07:01
+Node2 is alive. Latest heartbeat received at 2025-04-02 04:07:03
+Node1 is alive. Latest heartbeat received at 2025-04-02 04:07:06
+Node2 is alive. Latest heartbeat received at 2025-04-02 04:07:08
+Node1 is alive. Latest heartbeat received at 2025-04-02 04:07:11
+Node2 is alive. Latest heartbeat received at 2025-04-02 04:07:13
+Node1 is alive. Latest heartbeat received at 2025-04-02 04:07:16
