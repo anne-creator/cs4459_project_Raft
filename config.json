@@ -1,0 +1,5 @@
+{
+    "node1": {"host": "localhost", "port": 50051},
+    "node2": {"host": "localhost", "port": 50052}
+  }
+  
