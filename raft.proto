@@ -9,6 +9,7 @@ service Raft {
   rpc AppendEntries(AppendEntriesRequest) returns (AppendEntriesResponse);
   rpc NotifyLeader(LeaderNotification) returns (google.protobuf.Empty);
   rpc Put(PutRequest) returns (PutResponse);
+  rpc Replicate(ReplicateRequest) returns (ReplicateResponse);
 }
 
 message RequestVoteRequest {
@@ -42,4 +43,13 @@ message PutRequest {
 
 message PutResponse {
   bool success = 1;
+}
+
+message ReplicateRequest {
+  string key = 1;
+  string value = 2;
+}
+
+message ReplicateResponse {
+  bool ack = 1;
 }

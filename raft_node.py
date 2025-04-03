@@ -6,7 +6,7 @@ import random
 import json
 from concurrent import futures
 from google.protobuf.empty_pb2 import Empty
-from raft_pb2 import RequestVoteRequest, RequestVoteResponse, AppendEntriesRequest, AppendEntriesResponse, LeaderNotification, PutRequest, PutResponse
+from raft_pb2 import RequestVoteRequest, RequestVoteResponse, AppendEntriesRequest, AppendEntriesResponse, LeaderNotification, PutRequest, PutResponse, ReplicateRequest, ReplicateResponse
 import raft_pb2_grpc
 
 FOLLOWER = "follower"
@@ -115,9 +115,39 @@ class RaftNode(raft_pb2_grpc.RaftServicer):
         if self.state != LEADER:
             self.log("Put request rejected — not the leader")
             return PutResponse(success=False)
+
+        # Save locally
         self.store[request.key] = request.value
-        self.log(f"Stored: {request.key} → {request.value}")
-        return PutResponse(success=True)
+        self.log(f"Stored locally: {request.key} → {request.value}")
+
+        # Send to peers
+        acks = 1  # self
+        for peer_id, address in self.peers:
+            try:
+                with grpc.insecure_channel(address) as channel:
+                    stub = raft_pb2_grpc.RaftStub(channel)
+                    response = stub.Replicate(
+                        ReplicateRequest(key=request.key, value=request.value),
+                        timeout=2.0
+                    )
+                    if response.ack:
+                        acks += 1
+            except grpc.RpcError as e:
+                self.log(f"Replication to {peer_id} failed: {e}")
+
+        if acks > len(self.peers) // 2:
+            self.log(f"Put({request.key}) replicated successfully to majority (acknowledgments received)")
+            return PutResponse(success=True)
+        else:
+            self.log(f"Put({request.key}) failed to reach majority")
+            return PutResponse(success=False)
+
+    
+    def Replicate(self, request, context):
+        self.store[request.key] = request.value
+        self.log(f"Replicated: {request.key} → {request.value}")
+        return ReplicateResponse(ack=True)
+
 
     def start(self, port):
         server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))

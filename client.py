@@ -15,7 +15,8 @@ def discover_leader(nodes_config):
                 stub = raft_pb2_grpc.RaftStub(channel)
                 stub.AppendEntries(raft_pb2.AppendEntriesRequest(term=0, leader_id=""), timeout=2.0)
                 return info["address"]
-        except grpc.RpcError:
+        except grpc.RpcError as e:
+            log(f"{e}")
             continue
     return None
 
@@ -27,12 +28,20 @@ def send_to_leader(address, key, value):
             if response.success:
                 log(f"Sent ({key}, {value}) to leader at {address}")
                 print(f"Stored ({key}, {value}) successfully!")
+                return
             else:
-                log(f"Leader {address} rejected the write.")
-                print(f"Leader {address} rejected the write.")
+                log(f"{address} rejected write — retrying with new leader...")
         except grpc.RpcError as e:
-            log(f"Failed to send to leader: {e}")
-            print("Failed to send to leader.")
+            log(f"Failed to send to leader {address}: {e}")
+    
+    # Re-discover and retry
+    new_address = discover_leader(config)
+    if new_address and new_address != address:
+        send_to_leader(new_address, key, value)
+    else:
+        log("Retry failed — no new leader found.")
+        print("Retry failed — no new leader found.")
+
 
 if __name__ == "__main__":
     with open("nodes_config.json") as f:
