@@ -287,3 +287,1262 @@ Thu Apr  3 18:29:26 2025 — Received heartbeat from leader node2
 Thu Apr  3 18:29:29 2025 — Received heartbeat from leader node2
 Thu Apr  3 18:29:32 2025 — Received heartbeat from leader node2
 Thu Apr  3 18:29:35 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:29:38 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:29:41 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:29:44 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:29:47 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:29:50 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:29:53 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:29:56 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:29:59 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:30:02 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:30:05 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:30:08 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:30:09 2025 — Put request rejected — not the leader
+Thu Apr  3 18:30:11 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:30:14 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:30:17 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:30:20 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:30:23 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:30:26 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:30:29 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:30:32 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:30:35 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:30:38 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:30:41 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:30:44 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:30:47 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:30:50 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:30:53 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:30:56 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:30:59 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:31:02 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:31:05 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:31:08 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:31:11 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:31:14 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:31:17 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:31:20 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:31:23 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:31:26 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:31:29 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:31:32 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:31:35 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:31:38 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:31:41 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:31:44 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:31:51 2025 — gRPC server started on port 50051
+Thu Apr  3 18:31:57 2025 — Starting election for term 1
+Thu Apr  3 18:31:57 2025 — Got vote from node3
+Thu Apr  3 18:31:57 2025 — Became leader for term 1
+Thu Apr  3 18:31:57 2025 — Notified node2 of new leader
+Thu Apr  3 18:31:57 2025 — Notified node3 of new leader
+Thu Apr  3 18:31:57 2025 — Got vote from node2
+Thu Apr  3 18:32:00 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 18:32:00 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 18:32:03 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 18:32:03 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 18:32:06 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 18:32:06 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 18:32:18 2025 — gRPC server started on port 50051
+Thu Apr  3 18:32:24 2025 — Starting election for term 1
+Thu Apr  3 18:32:24 2025 — Got vote from node2
+Thu Apr  3 18:32:24 2025 — Became leader for term 1
+Thu Apr  3 18:32:24 2025 — Notified node2 of new leader
+Thu Apr  3 18:32:24 2025 — Notified node3 of new leader
+Thu Apr  3 18:32:24 2025 — Got vote from node3
+Thu Apr  3 18:32:27 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 18:32:27 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 18:32:30 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 18:32:30 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 18:32:33 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 18:32:33 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 18:32:36 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 18:32:36 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 18:32:39 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 18:32:39 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 18:32:42 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 18:32:42 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 18:32:45 2025 — Stored locally: hi → hello
+Thu Apr  3 18:32:45 2025 — Put(hi) replicated successfully to majority (acknowledgments received)
+Thu Apr  3 18:32:45 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 18:32:45 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 18:32:48 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 18:32:48 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 18:33:23 2025 — gRPC server started on port 50051
+Thu Apr  3 18:33:29 2025 — Starting election for term 1
+Thu Apr  3 18:33:29 2025 — Got vote from node2
+Thu Apr  3 18:33:29 2025 — Became leader for term 1
+Thu Apr  3 18:33:29 2025 — Notified node2 of new leader
+Thu Apr  3 18:33:29 2025 — Notified node3 of new leader
+Thu Apr  3 18:33:29 2025 — Got vote from node3
+Thu Apr  3 18:33:32 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 18:33:32 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 18:33:35 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 18:33:35 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 18:33:38 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 18:33:38 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 18:33:41 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 18:33:41 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 18:33:44 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 18:33:44 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 18:33:47 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 18:33:47 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 18:33:50 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 18:33:50 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 18:33:53 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 18:33:53 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 18:33:56 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 18:33:56 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 18:33:59 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 18:33:59 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 18:34:01 2025 — Stored locally: de → de
+Thu Apr  3 18:34:01 2025 — Put(de) replicated successfully to majority (acknowledgments received)
+Thu Apr  3 18:34:02 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 18:34:02 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 18:34:20 2025 — gRPC server started on port 50051
+Thu Apr  3 18:34:21 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:34:24 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:34:27 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
+Thu Apr  3 18:34:30 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:34:33 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:34:36 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:34:39 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:34:42 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:34:45 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:34:48 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:34:51 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:34:54 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:34:57 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:35:00 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:35:03 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:35:06 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:35:09 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:35:12 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:35:15 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:35:18 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:35:21 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:35:24 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:35:27 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:35:30 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:35:33 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:35:36 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:35:39 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:35:42 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:35:45 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:35:48 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:35:51 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:35:54 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:35:57 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:36:00 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:36:03 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:36:06 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:36:09 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:36:12 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:36:15 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:36:18 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:36:21 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:36:24 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:36:27 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:36:30 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:36:33 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:36:36 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:36:39 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:36:42 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:36:45 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:36:48 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:36:51 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:36:54 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:36:57 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:37:00 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:37:03 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:37:06 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:37:09 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:37:12 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:37:15 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:37:18 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:37:21 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:37:24 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:37:27 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:37:30 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:37:33 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:37:36 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:37:39 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:37:42 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:37:45 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:37:48 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:37:51 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:37:54 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:37:57 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:38:00 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:38:03 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:38:06 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:38:09 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:38:12 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:38:15 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:38:18 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:38:21 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:38:24 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:38:27 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:38:30 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:38:33 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:38:36 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:38:39 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:38:42 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:38:45 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:38:48 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:38:51 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:38:56 2025 — gRPC server started on port 50051
+Thu Apr  3 18:39:02 2025 — Starting election for term 1
+Thu Apr  3 18:39:02 2025 — Got vote from node2
+Thu Apr  3 18:39:02 2025 — Became leader for term 1
+Thu Apr  3 18:39:02 2025 — Notified node2 of new leader
+Thu Apr  3 18:39:02 2025 — Notified node3 of new leader
+Thu Apr  3 18:39:02 2025 — Got vote from node3
+Thu Apr  3 18:39:05 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 18:39:05 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 18:39:08 2025 — Stored locally: hi → hello
+Thu Apr  3 18:39:08 2025 — Put(hi) replicated successfully to majority (acknowledgments received)
+Thu Apr  3 18:39:08 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 18:39:08 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 18:39:11 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 18:39:11 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 18:44:42 2025 — gRPC server started on port 50051
+Thu Apr  3 18:44:48 2025 — Starting election for term 1
+Thu Apr  3 18:44:48 2025 — Got vote from node3
+Thu Apr  3 18:44:48 2025 — Became leader for term 1
+Thu Apr  3 18:44:48 2025 — Notified node2 of new leader
+Thu Apr  3 18:44:48 2025 — Notified node3 of new leader
+Thu Apr  3 18:44:48 2025 — Got vote from node2
+Thu Apr  3 18:44:51 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 18:44:51 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 18:44:54 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 18:44:54 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 18:44:57 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 18:44:57 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 18:44:59 2025 — Stored locally: hi → hello
+Thu Apr  3 18:44:59 2025 — Put(hi) replicated successfully to majority (acknowledgments received)
+Thu Apr  3 18:45:00 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 18:45:00 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 18:46:28 2025 — gRPC server started on port 50051
+Thu Apr  3 18:46:28 2025 — Received heartbeat from leader node3
+Thu Apr  3 18:46:31 2025 — Received heartbeat from leader node3
+Thu Apr  3 18:46:34 2025 — Received heartbeat from leader node3
+Thu Apr  3 18:46:37 2025 — Received heartbeat from leader node3
+Thu Apr  3 18:46:45 2025 — Notified of new leader node2
+Thu Apr  3 18:46:48 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:46:51 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:46:53 2025 — Replicated: hello → hi
+Thu Apr  3 18:46:54 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:46:57 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:47:00 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:47:02 2025 — Replicated: wow → wow
+Thu Apr  3 18:47:03 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:47:06 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:47:09 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:47:12 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:47:15 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:47:18 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:47:21 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:47:24 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:47:25 2025 — Replicated: DAMN → DAMN
+Thu Apr  3 18:47:27 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:47:30 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:47:33 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:47:36 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:47:39 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:47:42 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:47:45 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:47:48 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:47:51 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:47:54 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:47:57 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:48:00 2025 — Received heartbeat from leader node2
+Thu Apr  3 18:48:03 2025 — Received heartbeat from leader node2

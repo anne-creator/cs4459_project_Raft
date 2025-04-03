@@ -3,6 +3,7 @@ import json
 import time
 import raft_pb2
 import raft_pb2_grpc
+from google.protobuf.empty_pb2 import Empty
 
 def log(message):
     with open("client.txt", "a") as f:
@@ -13,12 +14,13 @@ def discover_leader(nodes_config):
         try:
             with grpc.insecure_channel(info["address"]) as channel:
                 stub = raft_pb2_grpc.RaftStub(channel)
-                stub.AppendEntries(raft_pb2.AppendEntriesRequest(term=0, leader_id=""), timeout=2.0)
-                return info["address"]
-        except grpc.RpcError as e:
-            log(f"{e}")
+                response = stub.WhoIsLeader(Empty(), timeout=2.0)
+                if response.address:
+                    return response.address
+        except grpc.RpcError:
             continue
     return None
+
 
 def send_to_leader(address, key, value):
     with grpc.insecure_channel(address) as channel:
@@ -36,7 +38,8 @@ def send_to_leader(address, key, value):
     
     # Re-discover and retry
     new_address = discover_leader(config)
-    if new_address and new_address != address:
+    if new_address:
+        print(new_address)
         send_to_leader(new_address, key, value)
     else:
         log("Retry failed — no new leader found.")
