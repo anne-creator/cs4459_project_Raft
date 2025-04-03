@@ -10,6 +10,8 @@ service Raft {
   rpc NotifyLeader(LeaderNotification) returns (google.protobuf.Empty);
   rpc Put(PutRequest) returns (PutResponse);
   rpc Replicate(ReplicateRequest) returns (ReplicateResponse);
+  rpc WhoIsLeader(google.protobuf.Empty) returns (LeaderResponse);
+
 }
 
 message RequestVoteRequest {
@@ -52,4 +54,9 @@ message ReplicateRequest {
 
 message ReplicateResponse {
   bool ack = 1;
+}
+
+message LeaderResponse {
+  string leader_id = 1;
+  string address = 2;
 }

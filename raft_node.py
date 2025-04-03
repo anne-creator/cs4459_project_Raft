@@ -6,7 +6,7 @@ import random
 import json
 from concurrent import futures
 from google.protobuf.empty_pb2 import Empty
-from raft_pb2 import RequestVoteRequest, RequestVoteResponse, AppendEntriesRequest, AppendEntriesResponse, LeaderNotification, PutRequest, PutResponse, ReplicateRequest, ReplicateResponse
+from raft_pb2 import RequestVoteRequest, RequestVoteResponse, AppendEntriesRequest, AppendEntriesResponse, LeaderNotification, PutRequest, PutResponse, ReplicateRequest, ReplicateResponse, LeaderResponse
 import raft_pb2_grpc
 
 FOLLOWER = "follower"
@@ -78,6 +78,19 @@ class RaftNode(raft_pb2_grpc.RaftServicer):
                     self.log(f"Notified {peer_id} of new leader")
             except grpc.RpcError as e:
                 self.log(f"Failed to notify {peer_id} about leader: {e}")
+                
+    def _get_leader_address(self):
+        if self.leader_id:
+            for peer_id, addr in self.peers:
+                if peer_id == self.leader_id:
+                    return addr
+            if self.leader_id == self.node_id:
+                return f"localhost:{self.port}"
+        return ""
+    
+    
+    def WhoIsLeader(self, request, context):
+        return LeaderResponse(leader_id=self.leader_id or "", address=self._get_leader_address())
 
     def RequestVote(self, request, context):
         with self.lock:
