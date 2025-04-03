@@ -1,6 +1,83 @@
-Thu Apr  3 05:39:01 2025 — Could not find leader
-Thu Apr  3 05:40:54 2025 — Could not find leader
-Thu Apr  3 05:41:43 2025 — Could not find leader
-Thu Apr  3 06:19:43 2025 — Discovered leader at localhost:50051 (via node1)
-Thu Apr  3 06:19:43 2025 — Sent (hi, bye) to leader at localhost:50051
-Thu Apr  3 06:28:13 2025 — Sent (hi, apple) to leader at localhost:50051
+Thu Apr  3 17:44:39 2025 — Leader localhost:50051 rejected the write.
+Thu Apr  3 17:45:16 2025 — Leader localhost:50051 rejected the write.
+Thu Apr  3 17:46:54 2025 — Sent (hello, bye) to leader at localhost:50051
+Thu Apr  3 18:03:33 2025 — Failed to send to leader: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: name 'raft_pb2' is not defined"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-04-03T18:03:33.578767-04:00", grpc_status:2, grpc_message:"Exception calling application: name \'raft_pb2\' is not defined"}"
+>
+Thu Apr  3 18:04:13 2025 — Failed to send to leader: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: name 'raft_pb2' is not defined"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-04-03T18:04:13.391474-04:00", grpc_status:2, grpc_message:"Exception calling application: name \'raft_pb2\' is not defined"}"
+>
+Thu Apr  3 18:08:06 2025 — Failed to send to leader: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: name 'raft_pb2' is not defined"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-04-03T18:08:06.07531-04:00", grpc_status:2, grpc_message:"Exception calling application: name \'raft_pb2\' is not defined"}"
+>
+Thu Apr  3 18:10:33 2025 — Sent (apple, banana) to leader at localhost:50051
+Thu Apr  3 18:13:45 2025 — Sent (apple, banana) to leader at localhost:50051
+Thu Apr  3 18:15:41 2025 — Leader localhost:50051 rejected the write.
+Thu Apr  3 18:21:41 2025 — Sent (hi, hello) to leader at localhost:50051
+Thu Apr  3 18:22:29 2025 — localhost:50052 rejected write — retrying with new leader...
+Thu Apr  3 18:22:29 2025 — Retry failed — no new leader found.
+Thu Apr  3 18:23:35 2025 — Sent (hi, bye) to leader at localhost:50051
+Thu Apr  3 18:23:52 2025 — <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50051: Failed to connect to remote host: connect: Connection refused (61)"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-04-03T18:23:52.338094-04:00", grpc_status:14, grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50051: Failed to connect to remote host: connect: Connection refused (61)"}"
+>
+Thu Apr  3 18:23:52 2025 — Sent (he, hello) to leader at localhost:50052
+Thu Apr  3 18:24:14 2025 — <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50051: Failed to connect to remote host: connect: Connection refused (61)"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50051: Failed to connect to remote host: connect: Connection refused (61)", grpc_status:14, created_time:"2025-04-03T18:24:14.71562-04:00"}"
+>
+Thu Apr  3 18:24:14 2025 — Sent (hi hello, hello) to leader at localhost:50052
+Thu Apr  3 18:25:07 2025 — Sent (apple, banana) to leader at localhost:50051
+Thu Apr  3 18:25:43 2025 — Sent (hi, hello) to leader at localhost:50051
+Thu Apr  3 18:25:52 2025 — Sent (hi hello, ge) to leader at localhost:50051
+Thu Apr  3 18:26:32 2025 — <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50051: Failed to connect to remote host: connect: Connection refused (61)"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50051: Failed to connect to remote host: connect: Connection refused (61)", grpc_status:14, created_time:"2025-04-03T18:26:32.241037-04:00"}"
+>
+Thu Apr  3 18:26:32 2025 — localhost:50052 rejected write — retrying with new leader...
+Thu Apr  3 18:26:32 2025 — <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50051: Failed to connect to remote host: connect: Connection refused (61)"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-04-03T18:26:32.246329-04:00", grpc_status:14, grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50051: Failed to connect to remote host: connect: Connection refused (61)"}"
+>
+Thu Apr  3 18:26:32 2025 — Retry failed — no new leader found.
+Thu Apr  3 18:26:43 2025 — <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50051: Failed to connect to remote host: connect: Connection refused (61)"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-04-03T18:26:43.671086-04:00", grpc_status:14, grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50051: Failed to connect to remote host: connect: Connection refused (61)"}"
+>
+Thu Apr  3 18:26:43 2025 — localhost:50052 rejected write — retrying with new leader...
+Thu Apr  3 18:26:43 2025 — <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50051: Failed to connect to remote host: connect: Connection refused (61)"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50051: Failed to connect to remote host: connect: Connection refused (61)", grpc_status:14, created_time:"2025-04-03T18:26:43.67469-04:00"}"
+>
+Thu Apr  3 18:26:43 2025 — Retry failed — no new leader found.
+Thu Apr  3 18:26:47 2025 — <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50051: Failed to connect to remote host: connect: Connection refused (61)"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50051: Failed to connect to remote host: connect: Connection refused (61)", grpc_status:14, created_time:"2025-04-03T18:26:47.96057-04:00"}"
+>
+Thu Apr  3 18:26:47 2025 — localhost:50052 rejected write — retrying with new leader...
+Thu Apr  3 18:26:47 2025 — <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50051: Failed to connect to remote host: connect: Connection refused (61)"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-04-03T18:26:47.964622-04:00", grpc_status:14, grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50051: Failed to connect to remote host: connect: Connection refused (61)"}"
+>
+Thu Apr  3 18:26:47 2025 — Retry failed — no new leader found.
+Thu Apr  3 18:27:36 2025 — localhost:50051 rejected write — retrying with new leader...
+Thu Apr  3 18:27:36 2025 — Retry failed — no new leader found.
+Thu Apr  3 18:27:40 2025 — localhost:50051 rejected write — retrying with new leader...
+Thu Apr  3 18:27:40 2025 — Retry failed — no new leader found.
+Thu Apr  3 18:27:59 2025 — Sent (hi, what) to leader at localhost:50051
+Thu Apr  3 18:28:36 2025 — localhost:50051 rejected write — retrying with new leader...
+Thu Apr  3 18:28:36 2025 — Retry failed — no new leader found.
