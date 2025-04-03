@@ -1,5 +1,6 @@
-1 book
-2 laptop
-3 coffee mug
-4 headphones
-5 backpack
+Thu Apr  3 05:39:01 2025 — Could not find leader
+Thu Apr  3 05:40:54 2025 — Could not find leader
+Thu Apr  3 05:41:43 2025 — Could not find leader
+Thu Apr  3 06:19:43 2025 — Discovered leader at localhost:50051 (via node1)
+Thu Apr  3 06:19:43 2025 — Sent (hi, bye) to leader at localhost:50051
+Thu Apr  3 06:28:13 2025 — Sent (hi, apple) to leader at localhost:50051

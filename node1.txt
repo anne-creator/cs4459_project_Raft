@@ -1,0 +1,34 @@
+Thu Apr  3 06:27:40 2025 — gRPC server started on port 50051
+Thu Apr  3 06:27:46 2025 — Starting election for term 1
+Thu Apr  3 06:27:46 2025 — Got vote from node3
+Thu Apr  3 06:27:46 2025 — Became leader for term 1
+Thu Apr  3 06:27:46 2025 — Notified node2 of new leader
+Thu Apr  3 06:27:46 2025 — Notified node3 of new leader
+Thu Apr  3 06:27:46 2025 — Got vote from node2
+Thu Apr  3 06:27:49 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 06:27:49 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 06:27:52 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 06:27:52 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 06:27:55 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 06:27:55 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 06:27:58 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 06:27:58 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 06:28:01 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 06:28:01 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 06:28:04 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 06:28:04 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 06:28:07 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 06:28:07 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 06:28:10 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 06:28:10 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 06:28:13 2025 — Stored: hi → apple
+Thu Apr  3 06:28:13 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 06:28:13 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 06:28:16 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 06:28:16 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 06:28:19 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 06:28:19 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 06:28:22 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 06:28:22 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 06:28:25 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 06:28:25 2025 — Sent heartbeat to localhost:50052
