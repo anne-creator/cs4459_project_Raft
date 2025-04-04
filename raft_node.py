@@ -3,6 +3,7 @@ import threading
 import time
 import random
 import json
+import math
 from concurrent import futures
 from google.protobuf.empty_pb2 import Empty
 from raft_pb2 import RequestVoteRequest, RequestVoteResponse, AppendEntriesRequest, AppendEntriesResponse, LeaderNotification, PutRequest, PutResponse, ReplicateRequest, ReplicateResponse, LeaderResponse, LogEntry
@@ -47,19 +48,27 @@ class RaftNode(raft_pb2_grpc.RaftServicer):
     def _reset_election_timeout(self):
         return time.time() + random.uniform(5, 6)
 
+    def _calculate_majority(self):
+        total_nodes = len(self.peers) + 1
+        return math.ceil(total_nodes / 2)
+
     def _start_election(self):
         print(f"{self.node_id}: _start_election() called!")
         with self.lock:
             self.state = CANDIDATE
             self.current_term += 1
             self.voted_for = self.node_id
-            self.votes_received = 1
+            self.votes_received = 1  # Vote for self
             self.election_timeout = self._reset_election_timeout()
         self.write_log(f"Starting election for term {self.current_term}")
+        
+        required_votes = self._calculate_majority()
+        self.write_log(f"Need {required_votes} votes to win election (out of {len(self.peers) + 1} nodes)")
+        
         for peer_id, address in self.peers:
-            threading.Thread(target=self._request_vote, args=(peer_id, address)).start()
+            threading.Thread(target=self._request_vote, args=(peer_id, address, required_votes)).start()
 
-    def _request_vote(self, peer_id, address):
+    def _request_vote(self, peer_id, address, required_votes):
         with grpc.insecure_channel(address) as channel:
             stub = raft_pb2_grpc.RaftStub(channel)
             try:
@@ -73,8 +82,8 @@ class RaftNode(raft_pb2_grpc.RaftServicer):
                 with self.lock:
                     if response.vote_granted:
                         self.votes_received += 1
-                        self.write_log(f"Got vote from {peer_id}")
-                        if self.votes_received > len(self.peers) // 2 and self.state == CANDIDATE:
+                        self.write_log(f"Got vote from {peer_id}. Total votes: {self.votes_received}/{required_votes}")
+                        if self.votes_received >= required_votes and self.state == CANDIDATE:
                             self.state = LEADER
                             self.leader_id = self.node_id
                             self.write_log(f"Became leader for term {self.current_term}")
@@ -175,6 +184,10 @@ class RaftNode(raft_pb2_grpc.RaftServicer):
         print(f"{self.node_id} appended entry to log: {entry}")
 
         acks = 1
+        required_acks = self._calculate_majority()
+        
+        self.write_log(f"Need {required_acks} acks to commit (out of {len(self.peers) + 1} nodes)")
+        
         for peer_id, address in self.peers:
             try:
                 with grpc.insecure_channel(address) as channel:
@@ -185,19 +198,19 @@ class RaftNode(raft_pb2_grpc.RaftServicer):
                     )
                     if response.ack:
                         acks += 1
-                        print(f"{self.node_id} received ack from {peer_id}")
+                        print(f"{self.node_id} received ack from {peer_id}. Total acks: {acks}/{required_acks}")
             except grpc.RpcError as e:
                 self.write_log(f"Replication to {peer_id} failed: {e}")
                 print(f"{self.node_id} failed to replicate to {peer_id}")
 
-        if acks > len(self.peers) // 2:
+        if acks >= required_acks:
             self.commit_index = entry["index"]
             self.apply_committed_entries()
-            self.write_log(f"Put({request.key}) replicated successfully to majority")
+            self.write_log(f"Put({request.key}) replicated successfully to majority ({acks}/{len(self.peers) + 1})")
             print(f"{self.node_id} Put({request.key}) committed")
             return PutResponse(success=True)
         else:
-            self.write_log(f"Put({request.key}) failed to reach majority")
+            self.write_log(f"Put({request.key}) failed to reach majority ({acks}/{len(self.peers) + 1})")
             print(f"{self.node_id} Put({request.key}) failed")
             return PutResponse(success=False)
 
@@ -238,6 +251,7 @@ class RaftNode(raft_pb2_grpc.RaftServicer):
                     threading.Thread(target=self._send_append_entries, args=(peer_id, address)).start()
 
             time.sleep(3)
+    
     def _send_append_entries(self, peer_id, address):
         try:
             with grpc.insecure_channel(address) as channel:
