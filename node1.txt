@@ -1,7 +1,13 @@
-Fri Apr  4 01:03:11 2025 — gRPC server started on port 50051
-Fri Apr  4 01:03:17 2025 — Applied entry to store: {'index': 0, 'term': 1, 'key': '5', 'value': '28'}
-Fri Apr  4 01:03:17 2025 — Applied entry to store: {'index': 1, 'term': 2, 'key': '3', 'value': '22'}
-Fri Apr  4 01:03:17 2025 — Applied entry to store: {'index': 2, 'term': 2, 'key': '3', 'value': '22'}
-Fri Apr  4 01:03:17 2025 — Applied entry to store: {'index': 3, 'term': 2, 'key': '3', 'value': '22'}
-Fri Apr  4 01:03:17 2025 — Applied entry to store: {'index': 4, 'term': 2, 'key': '3', 'value': '22'}
-Fri Apr  4 01:03:17 2025 — Applied entry to store: {'index': 5, 'term': 2, 'key': '3', 'value': '22'}
+Fri Apr  4 01:24:21 2025 — gRPC server started on port 50051
+Fri Apr  4 01:24:22 2025 — Applied entry to store: {'index': 0, 'term': 2, 'key': '5 12', 'value': '24'}
+Fri Apr  4 01:24:22 2025 — Applied entry to store: {'index': 1, 'term': 2, 'key': '4', 'value': '12'}
+Fri Apr  4 01:24:22 2025 — Applied entry to store: {'index': 2, 'term': 2, 'key': '4', 'value': '12'}
+Fri Apr  4 01:24:22 2025 — Applied entry to store: {'index': 3, 'term': 2, 'key': '4', 'value': '12'}
+Fri Apr  4 01:24:22 2025 — Applied entry to store: {'index': 4, 'term': 2, 'key': '4', 'value': '12'}
+Fri Apr  4 01:24:22 2025 — Applied entry to store: {'index': 5, 'term': 2, 'key': '4', 'value': '12'}
+Fri Apr  4 01:24:22 2025 — Applied entry to store: {'index': 6, 'term': 2, 'key': '4', 'value': '12'}
+Fri Apr  4 01:24:22 2025 — Applied entry to store: {'index': 7, 'term': 2, 'key': '4', 'value': '12'}
+Fri Apr  4 01:26:10 2025 — Replicated: 9 -> 33
+Fri Apr  4 01:26:12 2025 — Replicated: 9 -> 33
+Fri Apr  4 01:26:13 2025 — Applied entry to store: {'index': 8, 'term': 2, 'key': '9', 'value': '33'}
+Fri Apr  4 01:26:16 2025 — Applied entry to store: {'index': 9, 'term': 2, 'key': '9', 'value': '33'}
