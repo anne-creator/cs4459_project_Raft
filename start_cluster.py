@@ -223,6 +223,22 @@ def command_processor():
             print("Unknown command. Available commands: status, kill <node_id>, kill leader, restart <node_id>, quit")
             print("> ", end="", flush=True)
 
+def wait_for_leader(timeout=30):
+    """Wait until a leader is elected or timeout expires"""
+    start_time = time.time()
+    print("Waiting for leader election...", end="", flush=True)
+    
+    while time.time() - start_time < timeout:
+        leader = detect_leader()
+        if leader:
+            print(f"\nLeader elected: {leader}")
+            return leader
+        time.sleep(1)
+        print(".", end="", flush=True)
+    
+    print("\nTimeout waiting for leader election!")
+    return None
+
 def main():
     global processes, running
     
@@ -247,8 +263,10 @@ def main():
         monitor_thread.daemon = True
         monitor_thread.start()
         
+        # Wait for leader election before showing status
+        wait_for_leader()
+        
         # Print initial status
-        time.sleep(2)  # Give nodes time to elect a leader
         print_cluster_status()
         
         # Process commands
