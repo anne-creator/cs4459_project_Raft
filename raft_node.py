@@ -238,30 +238,41 @@ class RaftNode(raft_pb2_grpc.RaftServicer):
                     threading.Thread(target=self._send_append_entries, args=(peer_id, address)).start()
 
             time.sleep(3)
-
     def _send_append_entries(self, peer_id, address):
-        with grpc.insecure_channel(address) as channel:
-            stub = raft_pb2_grpc.RaftStub(channel)
-            prev_index = self.next_index.get(peer_id, 0) - 1
-            prev_term = self.log[prev_index]["term"] if prev_index >= 0 else 0
-            entries = self.log[self.next_index[peer_id]:]
-            request = AppendEntriesRequest(
-                term=self.current_term,
-                leader_id=self.node_id,
-                prev_log_index=prev_index,
-                prev_log_term=prev_term,
-                entries=[LogEntry(index=e["index"], term=e["term"], key=e["key"], value=e["value"]) for e in entries],
-                leader_commit=self.commit_index
-            )
-            try:
+        try:
+            with grpc.insecure_channel(address) as channel:
+                stub = raft_pb2_grpc.RaftStub(channel)
+                
+                # Initialize next_index for newly seen peers
+                if peer_id not in self.next_index:
+                    self.next_index[peer_id] = 0
+                    self.match_index[peer_id] = -1
+                
+                prev_index = self.next_index.get(peer_id, 0) - 1
+                prev_term = self.log[prev_index]["term"] if prev_index >= 0 else 0
+                entries = self.log[self.next_index[peer_id]:]
+                
+                request = AppendEntriesRequest(
+                    term=self.current_term,
+                    leader_id=self.node_id,
+                    prev_log_index=prev_index,
+                    prev_log_term=prev_term,
+                    entries=[LogEntry(index=e["index"], term=e["term"], key=e["key"], value=e["value"]) for e in entries],
+                    leader_commit=self.commit_index
+                )
+                
                 response = stub.AppendEntries(request, timeout=2.0)
                 if response.success:
-                    self.match_index[peer_id] = self.next_index[peer_id] + len(entries) - 1
-                    self.next_index[peer_id] += len(entries)
+                    if entries:  # Only update if we sent entries
+                        self.match_index[peer_id] = prev_index + len(entries)
+                        self.next_index[peer_id] = self.match_index[peer_id] + 1
+                        self.write_log(f"Successfully updated {peer_id} with {len(entries)} entries")
                 else:
+                    # Log consistency check failed, decrement next_index and try again
                     self.next_index[peer_id] = max(0, self.next_index[peer_id] - 1)
-            except grpc.RpcError as e:
-                self.write_log(f"Failed to send AppendEntries to {peer_id}: {e}")
+                    self.write_log(f"AppendEntries rejected by {peer_id}, trying with lower index {self.next_index[peer_id]}")
+        except grpc.RpcError as e:
+            self.write_log(f"Failed to send AppendEntries to {peer_id}: {e}")
 
 if __name__ == "__main__":
     import sys
