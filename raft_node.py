@@ -227,7 +227,7 @@ class RaftNode(raft_pb2_grpc.RaftServicer):
     def _run(self):
         while True:
             now = time.time()
-            print(f"{self.node_id} loop running. State: {self.state}")
+            print(f"[{time.strftime('%H:%M:%S')}] {self.node_id} loop running. State: {self.state}")
 
             if self.state != LEADER and now > self.election_timeout:
                 print(f"{self.node_id}: Triggering election logic...")
