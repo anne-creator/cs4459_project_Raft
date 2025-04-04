@@ -158,11 +158,12 @@ class RaftNode(raft_pb2_grpc.RaftServicer):
     
     def Replicate(self, request, context):
         self.store[request.key] = request.value
-        self.log(f"Replicated: {request.key} → {request.value}")
+        self.log(f"Replicated: {request.key} -> {request.value}")
         return ReplicateResponse(ack=True)
 
 
     def start(self, port):
+        self.port = port  # Store port so leader can return its address
         server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
         raft_pb2_grpc.add_RaftServicer_to_server(self, server)
         server.add_insecure_port(f'localhost:{port}')
@@ -170,8 +171,14 @@ class RaftNode(raft_pb2_grpc.RaftServicer):
         print(f"Node {self.node_id} is running and listening on port {port}...")
         self.log(f"gRPC server started on port {port}")
 
-        threading.Thread(target=self._run).start()
-        server.wait_for_termination()
+        threading.Thread(target=self._run, daemon=True).start()  # Run background logic as daemon
+
+        try:
+            while True:
+                time.sleep(1)
+        except KeyboardInterrupt:
+            print(f"{self.node_id} shutting down.")
+            server.stop(0)
 
     def _run(self):
         while True:
