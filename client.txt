@@ -1,0 +1,22 @@
+Fri Apr  4 00:59:03 2025 — Sent (1, 25) to leader at localhost:50051
+Fri Apr  4 01:01:35 2025 — Sent (5, 28) to leader at localhost:50051
+Fri Apr  4 01:02:24 2025 — Failed to send to leader localhost:50053: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.DEADLINE_EXCEEDED
+	details = "Deadline Exceeded"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Deadline Exceeded", grpc_status:4, created_time:"2025-04-04T01:02:24.773258-04:00"}"
+>
+Fri Apr  4 01:02:28 2025 — Failed to send to leader localhost:50053: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.DEADLINE_EXCEEDED
+	details = "Deadline Exceeded"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-04-04T01:02:28.791329-04:00", grpc_status:4, grpc_message:"Deadline Exceeded"}"
+>
+Fri Apr  4 01:02:32 2025 — Failed to send to leader localhost:50053: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.DEADLINE_EXCEEDED
+	details = "Deadline Exceeded"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-04-04T01:02:32.809139-04:00", grpc_status:4, grpc_message:"Deadline Exceeded"}"
+>
+Fri Apr  4 01:02:36 2025 — Failed to send to leader localhost:50053: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.DEADLINE_EXCEEDED
+	details = "Deadline Exceeded"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-04-04T01:02:36.82191-04:00", grpc_status:4, grpc_message:"Deadline Exceeded"}"
+>

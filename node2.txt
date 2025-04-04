@@ -1,0 +1,15 @@
+Fri Apr  4 01:01:12 2025 — gRPC server started on port 50052
+Fri Apr  4 01:01:16 2025 — Notified of new leader node1
+Fri Apr  4 01:01:35 2025 — Replicated: 5 -> 28
+Fri Apr  4 01:01:37 2025 — Applied entry to store: {'index': 0, 'term': 1, 'key': '5', 'value': '28'}
+Fri Apr  4 01:02:01 2025 — Notified of new leader node3
+Fri Apr  4 01:02:24 2025 — Replicated: 3 -> 22
+Fri Apr  4 01:02:26 2025 — Applied entry to store: {'index': 1, 'term': 2, 'key': '3', 'value': '22'}
+Fri Apr  4 01:02:28 2025 — Replicated: 3 -> 22
+Fri Apr  4 01:02:29 2025 — Applied entry to store: {'index': 2, 'term': 2, 'key': '3', 'value': '22'}
+Fri Apr  4 01:02:32 2025 — Replicated: 3 -> 22
+Fri Apr  4 01:02:35 2025 — Applied entry to store: {'index': 3, 'term': 2, 'key': '3', 'value': '22'}
+Fri Apr  4 01:02:36 2025 — Replicated: 3 -> 22
+Fri Apr  4 01:02:38 2025 — Applied entry to store: {'index': 4, 'term': 2, 'key': '3', 'value': '22'}
+Fri Apr  4 01:02:40 2025 — Replicated: 3 -> 22
+Fri Apr  4 01:02:41 2025 — Applied entry to store: {'index': 5, 'term': 2, 'key': '3', 'value': '22'}

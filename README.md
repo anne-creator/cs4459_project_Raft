@@ -25,7 +25,7 @@ git fetch && git pull
 Run the following command to generate Python files from the `.proto` file:
 
 ```bash
-python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. raft.proto
+python3 -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. raft.proto
 ```
 
 ### 4. Start the RAFT cluster
@@ -33,15 +33,15 @@ python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. raft.proto
 Open **three terminal windows**, and in each one, run the following command (replacing `X` with the node number):
 
 ```bash
-python raft_node.py nodeX
+python3 raft_node.py nodeX
 ```
 
 For example:
 
 ```bash
-python raft_node.py node1
-python raft_node.py node2
-python raft_node.py node3
+python3 raft_node.py node1
+python3 raft_node.py node2
+python3 raft_node.py node3
 ```
 
 > **Note:** It's important to start the nodes within a short timeframe to avoid unnecessary elections due to timeouts. The first node started will most likely become the leader.
@@ -53,7 +53,7 @@ Once all nodes are running, the system will elect a leader and begin exchanging 
 In a **fourth terminal**, run the client:
 
 ```bash
-python3.9 client.py
+python3 client.py
 ```
 
 Enter a key and value when prompted. The client will send this data to the leader, which will replicate it to the follower nodes.
