@@ -1,2 +1,0 @@
-Fri Apr  4 03:26:49 2025 — gRPC server started on port 50077
-Fri Apr  4 03:26:54 2025 — Notified of new leader node1

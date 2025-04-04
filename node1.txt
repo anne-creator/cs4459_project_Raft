@@ -1,5 +1,0 @@
-Fri Apr  4 03:26:48 2025 — gRPC server started on port 50076
-Fri Apr  4 03:26:54 2025 — Starting election for term 1
-Fri Apr  4 03:26:54 2025 — Got vote from node2
-Fri Apr  4 03:26:54 2025 — Became leader for term 1
-Fri Apr  4 03:26:54 2025 — Notified node2 of new leader
