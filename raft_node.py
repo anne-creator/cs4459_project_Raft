@@ -1,4 +1,3 @@
-# raft_node.py (with Put method for key-value storage)
 import grpc
 import threading
 import time
@@ -6,7 +5,7 @@ import random
 import json
 from concurrent import futures
 from google.protobuf.empty_pb2 import Empty
-from raft_pb2 import RequestVoteRequest, RequestVoteResponse, AppendEntriesRequest, AppendEntriesResponse, LeaderNotification, PutRequest, PutResponse, ReplicateRequest, ReplicateResponse, LeaderResponse
+from raft_pb2 import RequestVoteRequest, RequestVoteResponse, AppendEntriesRequest, AppendEntriesResponse, LeaderNotification, PutRequest, PutResponse, ReplicateRequest, ReplicateResponse, LeaderResponse, LogEntry
 import raft_pb2_grpc
 
 FOLLOWER = "follower"
@@ -15,8 +14,9 @@ LEADER = "leader"
 
 class RaftNode(raft_pb2_grpc.RaftServicer):
     def __init__(self, node_id, peers):
+        open(f"{node_id}.txt", "w").close()
         self.node_id = node_id
-        self.peers = peers  # List of (id, address)
+        self.peers = peers
         self.current_term = 0
         self.voted_for = None
         self.state = FOLLOWER
@@ -26,10 +26,23 @@ class RaftNode(raft_pb2_grpc.RaftServicer):
         self.election_timeout = self._reset_election_timeout()
         self.log_file = f"{self.node_id}.txt"
         self.store = {}
+        self.log = []
+        self.commit_index = -1
+        self.last_applied = -1
+        self.next_index = {}
+        self.match_index = {}
 
-    def log(self, message):
+    def write_log(self, message):
         with open(self.log_file, "a", encoding="utf-8") as f:
             f.write(f"{time.ctime()} — {message}\n")
+
+    def apply_committed_entries(self):
+        while self.last_applied < self.commit_index:
+            self.last_applied += 1
+            entry = self.log[self.last_applied]
+            self.store[entry["key"]] = entry["value"]
+            self.write_log(f"Applied entry to store: {entry}")
+            print(f"{self.node_id} applied: {entry}")
 
     def _reset_election_timeout(self):
         return time.time() + random.uniform(5, 6)
@@ -42,7 +55,7 @@ class RaftNode(raft_pb2_grpc.RaftServicer):
             self.voted_for = self.node_id
             self.votes_received = 1
             self.election_timeout = self._reset_election_timeout()
-        self.log(f"Starting election for term {self.current_term}")
+        self.write_log(f"Starting election for term {self.current_term}")
         for peer_id, address in self.peers:
             threading.Thread(target=self._request_vote, args=(peer_id, address)).start()
 
@@ -60,25 +73,27 @@ class RaftNode(raft_pb2_grpc.RaftServicer):
                 with self.lock:
                     if response.vote_granted:
                         self.votes_received += 1
-                        self.log(f"Got vote from {peer_id}")
+                        self.write_log(f"Got vote from {peer_id}")
                         if self.votes_received > len(self.peers) // 2 and self.state == CANDIDATE:
                             self.state = LEADER
                             self.leader_id = self.node_id
-                            self.log(f"Became leader for term {self.current_term}")
+                            self.write_log(f"Became leader for term {self.current_term}")
                             self._notify_others_of_leader()
             except grpc.RpcError as e:
-                self.log(f"Failed to contact {peer_id}: {e}")
+                self.write_log(f"Failed to contact {peer_id}: {e}")
 
     def _notify_others_of_leader(self):
         for peer_id, address in self.peers:
+            self.next_index[peer_id] = len(self.log)
+            self.match_index[peer_id] = -1
             try:
                 with grpc.insecure_channel(address) as channel:
                     stub = raft_pb2_grpc.RaftStub(channel)
                     stub.NotifyLeader(LeaderNotification(leader_id=self.node_id), timeout=2.0)
-                    self.log(f"Notified {peer_id} of new leader")
+                    self.write_log(f"Notified {peer_id} of new leader")
             except grpc.RpcError as e:
-                self.log(f"Failed to notify {peer_id} about leader: {e}")
-                
+                self.write_log(f"Failed to notify {peer_id} about leader: {e}")
+
     def _get_leader_address(self):
         if self.leader_id:
             for peer_id, addr in self.peers:
@@ -87,8 +102,7 @@ class RaftNode(raft_pb2_grpc.RaftServicer):
             if self.leader_id == self.node_id:
                 return f"localhost:{self.port}"
         return ""
-    
-    
+
     def WhoIsLeader(self, request, context):
         return LeaderResponse(leader_id=self.leader_id or "", address=self._get_leader_address())
 
@@ -108,33 +122,59 @@ class RaftNode(raft_pb2_grpc.RaftServicer):
 
     def AppendEntries(self, request, context):
         with self.lock:
-            if request.term >= self.current_term:
-                self.current_term = request.term
-                self.leader_id = request.leader_id
-                self.state = FOLLOWER
-                self.election_timeout = self._reset_election_timeout()
-                self.log(f"Received heartbeat from leader {request.leader_id}")
-                return AppendEntriesResponse(term=self.current_term, success=True)
-            return AppendEntriesResponse(term=self.current_term, success=False)
+            if request.term < self.current_term:
+                return AppendEntriesResponse(term=self.current_term, success=False)
+
+            self.current_term = request.term
+            self.leader_id = request.leader_id
+            self.state = FOLLOWER
+            self.election_timeout = self._reset_election_timeout()
+
+            if request.prev_log_index >= len(self.log):
+                return AppendEntriesResponse(term=self.current_term, success=False)
+            if request.prev_log_index >= 0 and self.log[request.prev_log_index]["term"] != request.prev_log_term:
+                return AppendEntriesResponse(term=self.current_term, success=False)
+
+            self.log = self.log[:request.prev_log_index + 1]
+            for entry in request.entries:
+                self.log.append({
+                    "index": entry.index,
+                    "term": entry.term,
+                    "key": entry.key,
+                    "value": entry.value
+                })
+
+            if request.leader_commit > self.commit_index:
+                self.commit_index = min(request.leader_commit, len(self.log) - 1)
+
+            self.apply_committed_entries()
+
+            return AppendEntriesResponse(term=self.current_term, success=True)
 
     def NotifyLeader(self, request, context):
         with self.lock:
             self.leader_id = request.leader_id
             self.state = FOLLOWER
-            self.log(f"Notified of new leader {self.leader_id}")
+            self.write_log(f"Notified of new leader {self.leader_id}")
         return Empty()
 
     def Put(self, request, context):
         if self.state != LEADER:
-            self.log("Put request rejected — not the leader")
+            self.write_log("Put request rejected — not the leader")
+            print(f"{self.node_id} rejected Put request — not the leader")
             return PutResponse(success=False)
 
-        # Save locally
-        self.store[request.key] = request.value
-        self.log(f"Stored locally: {request.key} -> {request.value}")
+        entry = {
+            "index": len(self.log),
+            "term": self.current_term,
+            "key": request.key,
+            "value": request.value
+        }
+        self.log.append(entry)
+        self.write_log(f"Appended to log: {entry}")
+        print(f"{self.node_id} appended entry to log: {entry}")
 
-        # Send to peers
-        acks = 1  # self
+        acks = 1
         for peer_id, address in self.peers:
             try:
                 with grpc.insecure_channel(address) as channel:
@@ -145,33 +185,37 @@ class RaftNode(raft_pb2_grpc.RaftServicer):
                     )
                     if response.ack:
                         acks += 1
+                        print(f"{self.node_id} received ack from {peer_id}")
             except grpc.RpcError as e:
-                self.log(f"Replication to {peer_id} failed: {e}")
+                self.write_log(f"Replication to {peer_id} failed: {e}")
+                print(f"{self.node_id} failed to replicate to {peer_id}")
 
         if acks > len(self.peers) // 2:
-            self.log(f"Put({request.key}) replicated successfully to majority (acknowledgments received)")
+            self.commit_index = entry["index"]
+            self.apply_committed_entries()
+            self.write_log(f"Put({request.key}) replicated successfully to majority")
+            print(f"{self.node_id} Put({request.key}) committed")
             return PutResponse(success=True)
         else:
-            self.log(f"Put({request.key}) failed to reach majority")
+            self.write_log(f"Put({request.key}) failed to reach majority")
+            print(f"{self.node_id} Put({request.key}) failed")
             return PutResponse(success=False)
 
-    
     def Replicate(self, request, context):
-        self.store[request.key] = request.value
-        self.log(f"Replicated: {request.key} -> {request.value}")
+        self.write_log(f"Replicated: {request.key} -> {request.value}")
+        print(f"{self.node_id} replicated key={request.key} value={request.value}")
         return ReplicateResponse(ack=True)
 
-
     def start(self, port):
-        self.port = port  # Store port so leader can return its address
+        self.port = port
         server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
         raft_pb2_grpc.add_RaftServicer_to_server(self, server)
         server.add_insecure_port(f'localhost:{port}')
         server.start()
         print(f"Node {self.node_id} is running and listening on port {port}...")
-        self.log(f"gRPC server started on port {port}")
+        self.write_log(f"gRPC server started on port {port}")
 
-        threading.Thread(target=self._run, daemon=True).start()  # Run background logic as daemon
+        threading.Thread(target=self._run, daemon=True).start()
 
         try:
             while True:
@@ -184,7 +228,6 @@ class RaftNode(raft_pb2_grpc.RaftServicer):
         while True:
             now = time.time()
             print(f"{self.node_id} loop running. State: {self.state}")
-            # print(f"{self.node_id}: state={self.state}, now={now:.2f}, timeout={self.election_timeout:.2f}")
 
             if self.state != LEADER and now > self.election_timeout:
                 print(f"{self.node_id}: Triggering election logic...")
@@ -192,18 +235,33 @@ class RaftNode(raft_pb2_grpc.RaftServicer):
 
             elif self.state == LEADER:
                 for peer_id, address in self.peers:
-                    threading.Thread(target=self._send_heartbeat, args=(address,)).start()
+                    threading.Thread(target=self._send_append_entries, args=(peer_id, address)).start()
 
             time.sleep(3)
 
-    def _send_heartbeat(self, address):
+    def _send_append_entries(self, peer_id, address):
         with grpc.insecure_channel(address) as channel:
             stub = raft_pb2_grpc.RaftStub(channel)
+            prev_index = self.next_index.get(peer_id, 0) - 1
+            prev_term = self.log[prev_index]["term"] if prev_index >= 0 else 0
+            entries = self.log[self.next_index[peer_id]:]
+            request = AppendEntriesRequest(
+                term=self.current_term,
+                leader_id=self.node_id,
+                prev_log_index=prev_index,
+                prev_log_term=prev_term,
+                entries=[LogEntry(index=e["index"], term=e["term"], key=e["key"], value=e["value"]) for e in entries],
+                leader_commit=self.commit_index
+            )
             try:
-                stub.AppendEntries(AppendEntriesRequest(term=self.current_term, leader_id=self.node_id), timeout=2.0)
-                self.log(f"Sent heartbeat to {address}")
+                response = stub.AppendEntries(request, timeout=2.0)
+                if response.success:
+                    self.match_index[peer_id] = self.next_index[peer_id] + len(entries) - 1
+                    self.next_index[peer_id] += len(entries)
+                else:
+                    self.next_index[peer_id] = max(0, self.next_index[peer_id] - 1)
             except grpc.RpcError as e:
-                self.log(f"Failed to send heartbeat to {address}: {e}")
+                self.write_log(f"Failed to send AppendEntries to {peer_id}: {e}")
 
 if __name__ == "__main__":
     import sys
