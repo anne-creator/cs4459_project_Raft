@@ -28,7 +28,7 @@ class RaftNode(raft_pb2_grpc.RaftServicer):
         self.store = {}
 
     def log(self, message):
-        with open(self.log_file, "a") as f:
+        with open(self.log_file, "a", encoding="utf-8") as f:
             f.write(f"{time.ctime()} — {message}\n")
 
     def _reset_election_timeout(self):
@@ -131,7 +131,7 @@ class RaftNode(raft_pb2_grpc.RaftServicer):
 
         # Save locally
         self.store[request.key] = request.value
-        self.log(f"Stored locally: {request.key} → {request.value}")
+        self.log(f"Stored locally: {request.key} -> {request.value}")
 
         # Send to peers
         acks = 1  # self

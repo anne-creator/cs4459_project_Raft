@@ -1,1548 +1,222 @@
-Thu Apr  3 18:21:23 2025 — gRPC server started on port 50051
-Thu Apr  3 18:21:29 2025 — Starting election for term 1
-Thu Apr  3 18:21:29 2025 — Got vote from node2
-Thu Apr  3 18:21:29 2025 — Became leader for term 1
-Thu Apr  3 18:21:29 2025 — Notified node2 of new leader
-Thu Apr  3 18:21:29 2025 — Notified node3 of new leader
-Thu Apr  3 18:21:29 2025 — Got vote from node3
-Thu Apr  3 18:21:32 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:21:32 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:21:35 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:21:35 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:21:38 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:21:38 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:21:41 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:21:41 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:21:41 2025 — Stored locally: hi → hello
-Thu Apr  3 18:21:41 2025 — Put(hi) replicated successfully to majority (acknowledgments received)
-Thu Apr  3 18:21:44 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:21:44 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:21:47 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:21:47 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:21:50 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:21:50 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:21:53 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:21:53 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:21:56 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:21:56 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:21:59 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:21:59 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:22:02 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:22:02 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:23:20 2025 — gRPC server started on port 50051
-Thu Apr  3 18:23:26 2025 — Starting election for term 1
-Thu Apr  3 18:23:26 2025 — Got vote from node2
-Thu Apr  3 18:23:26 2025 — Became leader for term 1
-Thu Apr  3 18:23:26 2025 — Failed to contact node3: <_InactiveRpcError of RPC that terminated with:
-	status = StatusCode.UNAVAILABLE
-	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50053: Failed to connect to remote host: connect: Connection refused (61)"
-	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50053: Failed to connect to remote host: connect: Connection refused (61)", grpc_status:14, created_time:"2025-04-03T18:23:26.327124-04:00"}"
->
-Thu Apr  3 18:23:26 2025 — Notified node2 of new leader
-Thu Apr  3 18:23:26 2025 — Failed to notify node3 about leader: <_InactiveRpcError of RPC that terminated with:
-	status = StatusCode.UNAVAILABLE
-	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50053: Failed to connect to remote host: connect: Connection refused (61)"
-	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50053: Failed to connect to remote host: connect: Connection refused (61)", grpc_status:14, created_time:"2025-04-03T18:23:26.328687-04:00"}"
->
-Thu Apr  3 18:23:29 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:23:29 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:23:32 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:23:32 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:23:35 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:23:35 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:23:35 2025 — Stored locally: hi → bye
-Thu Apr  3 18:23:35 2025 — Put(hi) replicated successfully to majority (acknowledgments received)
-Thu Apr  3 18:23:38 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:23:38 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:24:23 2025 — gRPC server started on port 50051
-Thu Apr  3 18:24:25 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:24:28 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:24:31 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:24:34 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:24:41 2025 — Starting election for term 3
-Thu Apr  3 18:24:41 2025 — Got vote from node3
-Thu Apr  3 18:24:41 2025 — Became leader for term 3
-Thu Apr  3 18:24:41 2025 — Failed to contact node2: <_InactiveRpcError of RPC that terminated with:
-	status = StatusCode.UNAVAILABLE
-	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)"
-	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)", grpc_status:14, created_time:"2025-04-03T18:24:41.435376-04:00"}"
->
-Thu Apr  3 18:24:41 2025 — Failed to notify node2 about leader: <_InactiveRpcError of RPC that terminated with:
-	status = StatusCode.UNAVAILABLE
-	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)"
-	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-04-03T18:24:41.436411-04:00", grpc_status:14, grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)"}"
->
-Thu Apr  3 18:24:41 2025 — Notified node3 of new leader
-Thu Apr  3 18:24:44 2025 — Failed to send heartbeat to localhost:50052: <_InactiveRpcError of RPC that terminated with:
-	status = StatusCode.UNAVAILABLE
-	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)"
-	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)", grpc_status:14, created_time:"2025-04-03T18:24:44.433206-04:00"}"
->
-Thu Apr  3 18:24:44 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:24:47 2025 — Failed to send heartbeat to localhost:50052: <_InactiveRpcError of RPC that terminated with:
-	status = StatusCode.UNAVAILABLE
-	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)"
-	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-04-03T18:24:47.438377-04:00", grpc_status:14, grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)"}"
->
-Thu Apr  3 18:24:47 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:24:50 2025 — Failed to send heartbeat to localhost:50052: <_InactiveRpcError of RPC that terminated with:
-	status = StatusCode.UNAVAILABLE
-	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)"
-	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-04-03T18:24:50.44639-04:00", grpc_status:14, grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)"}"
->
-Thu Apr  3 18:24:50 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:24:53 2025 — Failed to send heartbeat to localhost:50052: <_InactiveRpcError of RPC that terminated with:
-	status = StatusCode.UNAVAILABLE
-	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)"
-	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-04-03T18:24:53.452155-04:00", grpc_status:14, grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)"}"
->
-Thu Apr  3 18:24:53 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:24:56 2025 — Failed to send heartbeat to localhost:50052: <_InactiveRpcError of RPC that terminated with:
-	status = StatusCode.UNAVAILABLE
-	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)"
-	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-04-03T18:24:56.456642-04:00", grpc_status:14, grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)"}"
->
-Thu Apr  3 18:24:56 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:24:59 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:24:59 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:25:02 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:25:02 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:25:05 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:25:05 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:25:07 2025 — Stored locally: apple → banana
-Thu Apr  3 18:25:07 2025 — Put(apple) replicated successfully to majority (acknowledgments received)
-Thu Apr  3 18:25:08 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:25:08 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:25:11 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:25:11 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:25:14 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:25:14 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:25:17 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:25:17 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:25:20 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:25:20 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:25:23 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:25:23 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:25:26 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:25:26 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:25:29 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:25:29 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:25:32 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:25:32 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:25:35 2025 — Failed to send heartbeat to localhost:50052: <_InactiveRpcError of RPC that terminated with:
-	status = StatusCode.UNAVAILABLE
-	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)"
-	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)", grpc_status:14, created_time:"2025-04-03T18:25:35.521383-04:00"}"
->
-Thu Apr  3 18:25:35 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:25:38 2025 — Failed to send heartbeat to localhost:50052: <_InactiveRpcError of RPC that terminated with:
-	status = StatusCode.UNAVAILABLE
-	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)"
-	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-04-03T18:25:38.523961-04:00", grpc_status:14, grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)"}"
->
-Thu Apr  3 18:25:38 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:25:41 2025 — Failed to send heartbeat to localhost:50052: <_InactiveRpcError of RPC that terminated with:
-	status = StatusCode.UNAVAILABLE
-	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)"
-	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)", grpc_status:14, created_time:"2025-04-03T18:25:41.531957-04:00"}"
->
-Thu Apr  3 18:25:41 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:25:43 2025 — Stored locally: hi → hello
-Thu Apr  3 18:25:43 2025 — Replication to node2 failed: <_InactiveRpcError of RPC that terminated with:
-	status = StatusCode.UNAVAILABLE
-	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)"
-	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-04-03T18:25:43.667087-04:00", grpc_status:14, grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)"}"
->
-Thu Apr  3 18:25:43 2025 — Put(hi) replicated successfully to majority (acknowledgments received)
-Thu Apr  3 18:25:44 2025 — Failed to send heartbeat to localhost:50052: <_InactiveRpcError of RPC that terminated with:
-	status = StatusCode.UNAVAILABLE
-	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)"
-	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)", grpc_status:14, created_time:"2025-04-03T18:25:44.533676-04:00"}"
->
-Thu Apr  3 18:25:44 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:25:47 2025 — Failed to send heartbeat to localhost:50052: <_InactiveRpcError of RPC that terminated with:
-	status = StatusCode.UNAVAILABLE
-	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)"
-	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)", grpc_status:14, created_time:"2025-04-03T18:25:47.537471-04:00"}"
->
-Thu Apr  3 18:25:47 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:25:50 2025 — Failed to send heartbeat to localhost:50052: <_InactiveRpcError of RPC that terminated with:
-	status = StatusCode.UNAVAILABLE
-	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)"
-	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-04-03T18:25:50.545772-04:00", grpc_status:14, grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)"}"
->
-Thu Apr  3 18:25:50 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:25:52 2025 — Stored locally: hi hello → ge
-Thu Apr  3 18:25:52 2025 — Replication to node2 failed: <_InactiveRpcError of RPC that terminated with:
-	status = StatusCode.UNAVAILABLE
-	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)"
-	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-04-03T18:25:52.407301-04:00", grpc_status:14, grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)"}"
->
-Thu Apr  3 18:25:52 2025 — Put(hi hello) replicated successfully to majority (acknowledgments received)
-Thu Apr  3 18:25:53 2025 — Failed to send heartbeat to localhost:50052: <_InactiveRpcError of RPC that terminated with:
-	status = StatusCode.UNAVAILABLE
-	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)"
-	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)", grpc_status:14, created_time:"2025-04-03T18:25:53.550082-04:00"}"
->
-Thu Apr  3 18:25:53 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:25:56 2025 — Failed to send heartbeat to localhost:50052: <_InactiveRpcError of RPC that terminated with:
-	status = StatusCode.UNAVAILABLE
-	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)"
-	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)", grpc_status:14, created_time:"2025-04-03T18:25:56.556326-04:00"}"
->
-Thu Apr  3 18:25:56 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:25:59 2025 — Failed to send heartbeat to localhost:50052: <_InactiveRpcError of RPC that terminated with:
-	status = StatusCode.UNAVAILABLE
-	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)"
-	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)", grpc_status:14, created_time:"2025-04-03T18:25:59.563387-04:00"}"
->
-Thu Apr  3 18:25:59 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:26:02 2025 — Failed to send heartbeat to localhost:50052: <_InactiveRpcError of RPC that terminated with:
-	status = StatusCode.UNAVAILABLE
-	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)"
-	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)", grpc_status:14, created_time:"2025-04-03T18:26:02.56502-04:00"}"
->
-Thu Apr  3 18:26:02 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:26:05 2025 — Failed to send heartbeat to localhost:50052: <_InactiveRpcError of RPC that terminated with:
-	status = StatusCode.UNAVAILABLE
-	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)"
-	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50052: Failed to connect to remote host: connect: Connection refused (61)", grpc_status:14, created_time:"2025-04-03T18:26:05.568164-04:00"}"
->
-Thu Apr  3 18:26:05 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:26:08 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:26:08 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:26:11 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:26:11 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:26:14 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:26:14 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:27:07 2025 — gRPC server started on port 50051
-Thu Apr  3 18:27:09 2025 — Received heartbeat from leader node3
-Thu Apr  3 18:27:12 2025 — Received heartbeat from leader node3
-Thu Apr  3 18:27:15 2025 — Received heartbeat from leader node3
-Thu Apr  3 18:27:18 2025 — Received heartbeat from leader node3
-Thu Apr  3 18:27:21 2025 — Received heartbeat from leader node3
-Thu Apr  3 18:27:24 2025 — Received heartbeat from leader node3
-Thu Apr  3 18:27:27 2025 — Received heartbeat from leader node3
-Thu Apr  3 18:27:30 2025 — Received heartbeat from leader node3
-Thu Apr  3 18:27:33 2025 — Received heartbeat from leader node3
-Thu Apr  3 18:27:36 2025 — Received heartbeat from leader node3
-Thu Apr  3 18:27:36 2025 — Put request rejected — not the leader
-Thu Apr  3 18:27:39 2025 — Received heartbeat from leader node3
-Thu Apr  3 18:27:40 2025 — Put request rejected — not the leader
-Thu Apr  3 18:27:42 2025 — Received heartbeat from leader node3
-Thu Apr  3 18:27:49 2025 — Starting election for term 5
-Thu Apr  3 18:27:49 2025 — Got vote from node2
-Thu Apr  3 18:27:49 2025 — Became leader for term 5
-Thu Apr  3 18:27:49 2025 — Failed to contact node3: <_InactiveRpcError of RPC that terminated with:
-	status = StatusCode.UNAVAILABLE
-	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50053: Failed to connect to remote host: connect: Connection refused (61)"
-	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-04-03T18:27:49.392138-04:00", grpc_status:14, grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50053: Failed to connect to remote host: connect: Connection refused (61)"}"
->
-Thu Apr  3 18:27:49 2025 — Notified node2 of new leader
-Thu Apr  3 18:27:49 2025 — Failed to notify node3 about leader: <_InactiveRpcError of RPC that terminated with:
-	status = StatusCode.UNAVAILABLE
-	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50053: Failed to connect to remote host: connect: Connection refused (61)"
-	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50053: Failed to connect to remote host: connect: Connection refused (61)", grpc_status:14, created_time:"2025-04-03T18:27:49.394377-04:00"}"
->
-Thu Apr  3 18:27:52 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:27:52 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:27:55 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:27:55 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:27:58 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:27:58 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:27:59 2025 — Stored locally: hi → what
-Thu Apr  3 18:27:59 2025 — Put(hi) replicated successfully to majority (acknowledgments received)
-Thu Apr  3 18:28:01 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:28:01 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:28:04 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:28:04 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:28:07 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:28:07 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:28:10 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:28:10 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:28:13 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:28:13 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:28:27 2025 — gRPC server started on port 50051
-Thu Apr  3 18:28:29 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:28:32 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:28:35 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:28:36 2025 — Put request rejected — not the leader
-Thu Apr  3 18:28:38 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:28:41 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:28:44 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:28:47 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:28:50 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:28:53 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:28:56 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:28:59 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:29:02 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:29:05 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:29:08 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:29:11 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:29:14 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:29:17 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:29:20 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:29:23 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:29:26 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:29:29 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:29:32 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:29:35 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:29:38 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:29:41 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:29:44 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:29:47 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:29:50 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:29:53 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:29:56 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:29:59 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:30:02 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:30:05 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:30:08 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:30:09 2025 — Put request rejected — not the leader
-Thu Apr  3 18:30:11 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:30:14 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:30:17 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:30:20 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:30:23 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:30:26 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:30:29 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:30:32 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:30:35 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:30:38 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:30:41 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:30:44 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:30:47 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:30:50 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:30:53 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:30:56 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:30:59 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:31:02 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:31:05 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:31:08 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:31:11 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:31:14 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:31:17 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:31:20 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:31:23 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:31:26 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:31:29 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:31:32 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:31:35 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:31:38 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:31:41 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:31:44 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:31:51 2025 — gRPC server started on port 50051
-Thu Apr  3 18:31:57 2025 — Starting election for term 1
-Thu Apr  3 18:31:57 2025 — Got vote from node3
-Thu Apr  3 18:31:57 2025 — Became leader for term 1
-Thu Apr  3 18:31:57 2025 — Notified node2 of new leader
-Thu Apr  3 18:31:57 2025 — Notified node3 of new leader
-Thu Apr  3 18:31:57 2025 — Got vote from node2
-Thu Apr  3 18:32:00 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:32:00 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:32:03 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:32:03 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:32:06 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:32:06 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:32:18 2025 — gRPC server started on port 50051
-Thu Apr  3 18:32:24 2025 — Starting election for term 1
-Thu Apr  3 18:32:24 2025 — Got vote from node2
-Thu Apr  3 18:32:24 2025 — Became leader for term 1
-Thu Apr  3 18:32:24 2025 — Notified node2 of new leader
-Thu Apr  3 18:32:24 2025 — Notified node3 of new leader
-Thu Apr  3 18:32:24 2025 — Got vote from node3
-Thu Apr  3 18:32:27 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:32:27 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:32:30 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:32:30 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:32:33 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:32:33 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:32:36 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:32:36 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:32:39 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:32:39 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:32:42 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:32:42 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:32:45 2025 — Stored locally: hi → hello
-Thu Apr  3 18:32:45 2025 — Put(hi) replicated successfully to majority (acknowledgments received)
-Thu Apr  3 18:32:45 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:32:45 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:32:48 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:32:48 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:33:23 2025 — gRPC server started on port 50051
-Thu Apr  3 18:33:29 2025 — Starting election for term 1
-Thu Apr  3 18:33:29 2025 — Got vote from node2
-Thu Apr  3 18:33:29 2025 — Became leader for term 1
-Thu Apr  3 18:33:29 2025 — Notified node2 of new leader
-Thu Apr  3 18:33:29 2025 — Notified node3 of new leader
-Thu Apr  3 18:33:29 2025 — Got vote from node3
-Thu Apr  3 18:33:32 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:33:32 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:33:35 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:33:35 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:33:38 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:33:38 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:33:41 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:33:41 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:33:44 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:33:44 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:33:47 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:33:47 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:33:50 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:33:50 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:33:53 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:33:53 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:33:56 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:33:56 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:33:59 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:33:59 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:34:01 2025 — Stored locally: de → de
-Thu Apr  3 18:34:01 2025 — Put(de) replicated successfully to majority (acknowledgments received)
-Thu Apr  3 18:34:02 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:34:02 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:34:20 2025 — gRPC server started on port 50051
-Thu Apr  3 18:34:21 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:34:24 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:34:27 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:27 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:28 2025 — Put request rejected — not the leader
-Thu Apr  3 18:34:30 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:34:33 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:34:36 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:34:39 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:34:42 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:34:45 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:34:48 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:34:51 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:34:54 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:34:57 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:35:00 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:35:03 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:35:06 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:35:09 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:35:12 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:35:15 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:35:18 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:35:21 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:35:24 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:35:27 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:35:30 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:35:33 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:35:36 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:35:39 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:35:42 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:35:45 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:35:48 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:35:51 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:35:54 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:35:57 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:36:00 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:36:03 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:36:06 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:36:09 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:36:12 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:36:15 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:36:18 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:36:21 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:36:24 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:36:27 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:36:30 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:36:33 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:36:36 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:36:39 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:36:42 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:36:45 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:36:48 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:36:51 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:36:54 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:36:57 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:37:00 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:37:03 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:37:06 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:37:09 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:37:12 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:37:15 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:37:18 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:37:21 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:37:24 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:37:27 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:37:30 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:37:33 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:37:36 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:37:39 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:37:42 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:37:45 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:37:48 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:37:51 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:37:54 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:37:57 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:38:00 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:38:03 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:38:06 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:38:09 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:38:12 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:38:15 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:38:18 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:38:21 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:38:24 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:38:27 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:38:30 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:38:33 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:38:36 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:38:39 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:38:42 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:38:45 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:38:48 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:38:51 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:38:56 2025 — gRPC server started on port 50051
-Thu Apr  3 18:39:02 2025 — Starting election for term 1
-Thu Apr  3 18:39:02 2025 — Got vote from node2
-Thu Apr  3 18:39:02 2025 — Became leader for term 1
-Thu Apr  3 18:39:02 2025 — Notified node2 of new leader
-Thu Apr  3 18:39:02 2025 — Notified node3 of new leader
-Thu Apr  3 18:39:02 2025 — Got vote from node3
-Thu Apr  3 18:39:05 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:39:05 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:39:08 2025 — Stored locally: hi → hello
-Thu Apr  3 18:39:08 2025 — Put(hi) replicated successfully to majority (acknowledgments received)
-Thu Apr  3 18:39:08 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:39:08 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:39:11 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:39:11 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:44:42 2025 — gRPC server started on port 50051
-Thu Apr  3 18:44:48 2025 — Starting election for term 1
-Thu Apr  3 18:44:48 2025 — Got vote from node3
-Thu Apr  3 18:44:48 2025 — Became leader for term 1
-Thu Apr  3 18:44:48 2025 — Notified node2 of new leader
-Thu Apr  3 18:44:48 2025 — Notified node3 of new leader
-Thu Apr  3 18:44:48 2025 — Got vote from node2
-Thu Apr  3 18:44:51 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:44:51 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:44:54 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:44:54 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:44:57 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:44:57 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:44:59 2025 — Stored locally: hi → hello
-Thu Apr  3 18:44:59 2025 — Put(hi) replicated successfully to majority (acknowledgments received)
-Thu Apr  3 18:45:00 2025 — Sent heartbeat to localhost:50052
-Thu Apr  3 18:45:00 2025 — Sent heartbeat to localhost:50053
-Thu Apr  3 18:46:28 2025 — gRPC server started on port 50051
-Thu Apr  3 18:46:28 2025 — Received heartbeat from leader node3
-Thu Apr  3 18:46:31 2025 — Received heartbeat from leader node3
-Thu Apr  3 18:46:34 2025 — Received heartbeat from leader node3
-Thu Apr  3 18:46:37 2025 — Received heartbeat from leader node3
-Thu Apr  3 18:46:45 2025 — Notified of new leader node2
-Thu Apr  3 18:46:48 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:46:51 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:46:53 2025 — Replicated: hello → hi
-Thu Apr  3 18:46:54 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:46:57 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:47:00 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:47:02 2025 — Replicated: wow → wow
-Thu Apr  3 18:47:03 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:47:06 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:47:09 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:47:12 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:47:15 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:47:18 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:47:21 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:47:24 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:47:25 2025 — Replicated: DAMN → DAMN
-Thu Apr  3 18:47:27 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:47:30 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:47:33 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:47:36 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:47:39 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:47:42 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:47:45 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:47:48 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:47:51 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:47:54 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:47:57 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:48:00 2025 — Received heartbeat from leader node2
-Thu Apr  3 18:48:03 2025 — Received heartbeat from leader node2
+Thu Apr  3 19:05:57 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:06:00 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:06:00 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:06:03 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:06:03 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:06:06 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:06:06 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:06:09 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:06:09 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:06:12 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:06:12 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:06:15 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:06:15 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:06:18 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:06:18 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:06:21 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:06:21 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:06:24 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:06:24 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:06:27 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:06:27 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:06:30 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:06:30 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:06:33 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:06:33 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:06:36 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:06:36 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:06:39 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:06:39 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:06:42 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:06:42 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:06:45 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:06:45 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:06:48 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:06:48 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:06:51 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:06:51 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:06:54 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:06:54 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:06:57 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:06:57 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:07:00 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:07:00 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:07:03 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:07:03 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:07:06 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:07:06 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:07:09 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:07:09 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:07:12 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:07:12 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:07:15 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:07:15 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:07:18 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:07:18 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:07:21 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:07:21 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:07:24 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:07:24 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:07:27 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:07:27 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:07:30 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:07:30 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:07:33 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:07:33 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:07:36 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:07:36 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:07:39 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:07:39 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:07:42 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:07:42 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:07:45 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:07:45 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:07:48 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:07:51 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:07:51 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:07:54 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:07:54 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:07:57 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:07:57 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:08:00 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:08:00 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:08:03 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:08:03 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:08:06 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:08:06 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:08:09 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:08:09 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:08:12 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:08:12 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:08:15 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:08:15 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:08:18 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:08:21 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:08:21 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:08:24 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:08:24 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:08:27 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:08:27 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:08:30 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:08:30 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:08:33 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:08:33 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:08:36 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:08:36 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:08:39 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:08:39 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:08:42 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:08:42 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:08:45 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:08:45 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:08:48 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:08:48 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:08:51 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:08:51 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:08:54 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:08:54 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:08:57 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:08:57 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:09:00 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:09:00 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:09:03 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:09:03 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:09:06 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:09:06 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:09:09 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:09:09 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:09:12 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:09:12 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:09:15 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:09:18 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:09:18 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:09:21 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:09:24 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:09:24 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:09:27 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:09:27 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:09:30 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:09:30 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:09:33 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:09:33 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:09:36 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:09:36 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:09:39 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:09:39 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:09:42 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:09:42 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:09:45 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:09:45 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:09:48 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:09:48 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:09:51 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:09:51 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:09:54 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:09:54 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:09:57 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:09:57 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:10:00 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:10:00 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:10:03 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:10:03 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:10:06 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:10:06 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:10:09 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:10:09 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:10:12 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:10:12 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:10:15 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:10:15 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:10:18 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:10:18 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:10:21 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:10:21 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:10:24 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:10:24 2025 � Sent heartbeat to localhost:50053
+Thu Apr  3 19:10:27 2025 � Sent heartbeat to localhost:50052
+Thu Apr  3 19:12:05 2025 — gRPC server started on port 50051
+Thu Apr  3 19:12:11 2025 — Starting election for term 1
+Thu Apr  3 19:12:11 2025 — Got vote from node2
+Thu Apr  3 19:12:11 2025 — Became leader for term 1
+Thu Apr  3 19:12:11 2025 — Notified node2 of new leader
+Thu Apr  3 19:12:11 2025 — Notified node3 of new leader
+Thu Apr  3 19:12:11 2025 — Got vote from node3
+Thu Apr  3 19:12:14 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 19:12:14 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 19:12:17 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 19:12:17 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 19:12:20 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 19:12:20 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 19:12:23 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 19:12:23 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 19:12:26 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 19:12:26 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 19:12:28 2025 — Stored locally: hi -> hello
+Thu Apr  3 19:12:28 2025 — Put(hi) replicated successfully to majority (acknowledgments received)
+Thu Apr  3 19:12:29 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 19:12:29 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 19:12:32 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 19:12:32 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 19:12:35 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 19:12:38 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 19:12:38 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 19:12:41 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 19:12:41 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 19:12:44 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 19:12:44 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 19:12:47 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 19:12:47 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 19:12:50 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 19:12:53 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 19:12:56 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 19:12:56 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 19:12:59 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 19:12:59 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 19:13:02 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 19:13:02 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 19:13:05 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 19:13:05 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 19:13:08 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 19:13:08 2025 — Sent heartbeat to localhost:50053
+Thu Apr  3 19:13:11 2025 — Sent heartbeat to localhost:50052
+Thu Apr  3 19:13:11 2025 — Sent heartbeat to localhost:50053
