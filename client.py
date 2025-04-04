@@ -26,6 +26,7 @@ def send_to_leader(address, key, value):
     with grpc.insecure_channel(address) as channel:
         stub = raft_pb2_grpc.RaftStub(channel)
         try:
+            print("test")
             response = stub.Put(raft_pb2.PutRequest(key=key, value=value), timeout=2.0)
             if response.success:
                 log(f"Sent ({key}, {value}) to leader at {address}")
