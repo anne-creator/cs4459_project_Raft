@@ -1,9 +1,5 @@
-Fri Apr  4 02:58:09 2025 — Client started
-Fri Apr  4 02:58:12 2025 — Discovered leader at localhost:50051
-Fri Apr  4 02:58:12 2025 — Successfully stored (3, 3) at leader localhost:50051
-Fri Apr  4 02:58:15 2025 — Discovered leader at localhost:50051
-Fri Apr  4 02:58:15 2025 — Successfully stored (1, 1) at leader localhost:50051
-Fri Apr  4 02:58:18 2025 — Discovered leader at localhost:50051
-Fri Apr  4 02:58:18 2025 — Successfully stored (5, 5) at leader localhost:50051
-Fri Apr  4 02:58:20 2025 — Discovered leader at localhost:50051
-Fri Apr  4 02:58:20 2025 — Successfully stored (9, 9) at leader localhost:50051
+Fri Apr  4 03:24:16 2025 — Client started
+Fri Apr  4 03:24:20 2025 — Discovered leader at localhost:50073
+Fri Apr  4 03:24:20 2025 — Successfully stored (5, 6) at leader localhost:50073
+Fri Apr  4 03:24:49 2025 — Discovered leader at localhost:50073
+Fri Apr  4 03:24:49 2025 — Successfully stored (2, 3) at leader localhost:50073
