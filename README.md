@@ -33,16 +33,17 @@ python3 -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. raft.proto
 
 ##### Running the Cluster
 The cluster can be easily started using the provided script:
-```
-Copypython3 start_cluster.py
+
+```bash
+python3 start_cluster.py
 ```
 
 This automatically starts a 3-node RAFT cluster with dynamic port allocation, leader election, and monitoring.
 
 You can also specify a custom number of nodes:
 
-```
-Copypython3 start_cluster.py <number_of_nodes>
+```bash
+python3 start_cluster.py <number_of_nodes>
 ```
 
 ##### Cluster Management
@@ -61,7 +62,7 @@ Once all nodes are running, the system will elect a leader and begin exchanging 
 
 After starting the cluster, run the client in a separate terminal:
 
-```base
+```bash
 Copypython3 client.py
 ```
 The client will:
@@ -83,5 +84,6 @@ These logs will show events such as heartbeats, data replication, and elections.
 
 ### 7. Log Files
 The system generates the following log files:
+
 client.txt: Records client operations and leader discovery
 node1.txt, node2.txt, etc.: Record node operations, elections, and data replication
