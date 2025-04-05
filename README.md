@@ -6,18 +6,19 @@ This project simulates a distributed key-value store built on the RAFT consensus
 
 Follow these steps to get the system up and running:
 
-### 1. Clone the repository
+### Prerequisites
 
-```bash
-git clone <repo-url>
+Python 3.7+
+gRPC
+Protocol Buffers compiler
+
+### 2. Installation
+
+Clone the repository
+Install the required dependencies:
+
 ```
-
-### 2. Pull the latest changes
-
-Make sure you have the most recent updates:
-
-```bash
-git fetch && git pull
+pip install grpc grpcio-tools
 ```
 
 ### 3. Compile the gRPC definitions
@@ -30,31 +31,44 @@ python3 -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. raft.proto
 
 ### 4. Start the RAFT cluster
 
-Open **three terminal windows**, and in each one, run the following command (replacing `X` with the node number):
-
-```bash
-python3 raft_node.py nodeX
+##### Running the Cluster
+The cluster can be easily started using the provided script:
+```
+Copypython3 start_cluster.py
 ```
 
-For example:
+This automatically starts a 3-node RAFT cluster with dynamic port allocation, leader election, and monitoring.
 
-```bash
-python3 raft_node.py node1
-python3 raft_node.py node2
-python3 raft_node.py node3
+You can also specify a custom number of nodes:
+
+```
+Copypython3 start_cluster.py <number_of_nodes>
 ```
 
-> **Note:** It's important to start the nodes within a short timeframe to avoid unnecessary elections due to timeouts. The first node started will most likely become the leader.
+##### Cluster Management
+
+The start_cluster.py script provides an interactive interface for managing the cluster:
+
+status - Display current cluster status and leader information
+kill <node_id> - Terminate a specific node
+kill leader - Terminate the current leader node (triggers new election)
+restart <node_id> - Restart a previously killed node
+quit - Exit the program and terminate all nodes
 
 Once all nodes are running, the system will elect a leader and begin exchanging heartbeat messages.
 
 ### 5. Run the client
 
-In a **fourth terminal**, run the client:
+After starting the cluster, run the client in a separate terminal:
 
-```bash
-python3 client.py
+```base
+Copypython3 client.py
 ```
+The client will:
+
+Automatically discover the current leader
+Allow you to enter key-value pairs mutiple times to store in the distributed system
+Handle leader failures by reconnecting to the new leader
 
 Enter a key and value when prompted. The client will send this data to the leader, which will replicate it to the follower nodes.
 
@@ -67,6 +81,7 @@ You can verify system operations by checking the log files:
 
 These logs will show events such as heartbeats, data replication, and elections.
 
-### 7. Test leader failure
-
-If you terminate the leader node, the remaining nodes will automatically detect the failure and elect a new leader.
+### 7. Log Files
+The system generates the following log files:
+client.txt: Records client operations and leader discovery
+node1.txt, node2.txt, etc.: Record node operations, elections, and data replication
